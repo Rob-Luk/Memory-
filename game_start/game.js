@@ -35,10 +35,29 @@ const showCards = function () {
 	activeCard = this;
 	activeCard.classList.remove('hidden');
 
+	if (activeCards.length === 0) {
+		activeCards[0] = activeCard;
+		return;
+	} else {
+		cards.forEach((card) => card.removeEventListener('click', showCards));
+		activeCards[1] = activeCard;
 
-
+		setTimeout(function () {
+			if (activeCards[0].className === activeCards[1].className) {
+				activeCards.forEach((card) => {
+					return;
+				});
+			} else {
+				activeCards.forEach((card) => {
+					card.classList.add('hidden');
+				});
+			}
+			activeCard = '';
+			activeCards.length = 0;
+			cards.forEach((card) => card.addEventListener('click', showCards));
+		}, 1000);
+	}
 };
-
 // licznik kliknięć myszką
 
 const mouseMove = () => {
@@ -60,6 +79,7 @@ const clicksScore = mouseMove();
 const playGame = () => {
 	cards.forEach((card) => {
 		card.addEventListener('click', clicksScore);
+
 		const position = Math.floor(Math.random() * cardsArray.length);
 
 		card.classList.add(cardsArray[position]);
@@ -71,7 +91,7 @@ const playGame = () => {
 			card.classList.add('hidden');
 			card.addEventListener('click', showCards);
 		});
-	}, 1000);
+	}, 800);
 };
 
 btnPlay.addEventListener('click', playGame);
