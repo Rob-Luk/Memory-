@@ -1,0 +1,6 @@
+- add score
+- add timer
+- add game over (more than 3 wrong answers)
+- add game finished (all questions answered)
+- add restart game button and logic
+- rebuild game to use Game Class (OOP approach)

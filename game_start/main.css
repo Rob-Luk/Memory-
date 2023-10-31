@@ -1,129 +1,118 @@
 body {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: url('./img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yMl9oYWxsb3dlZW5fdGhlbWVkX3dhbGxwYXBlcl9wdXJwbGVfYmFja2dyb3VuZF82Yjk4NWUyMC1lZmI5LTQxYTktYjlhOS0zYTZkMGNhNmRjMjJfMS5qcGc.webp');
-	background-size: cover;
-	background-position: center;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yMl9oYWxsb3dlZW5fdGhlbWVkX3dhbGxwYXBlcl9wdXJwbGVfYmFja2dyb3VuZF82Yjk4NWUyMC1lZmI5LTQxYTktYjlhOS0zYTZkMGNhNmRjMjJfMS5qcGc.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .gameBox {
-	position: relative;
-	top: 10%;
-	margin: 50px auto;
-	padding: 10px;
-	max-width: 800px;
-	height: 600px;
-	color: rgb(243, 238, 238);
-	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.2);
-	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  top: 10%;
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 800px;
+  height: 600px;
+  color: rgb(243, 238, 238);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .cards {
-	opacity: 1;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-auto-rows: minmax(80px, auto);
-	gap: 10px;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  gap: 10px;
 }
 
 .card {
-	width: 100px;
-	height: 120px;
-	margin: 0 auto;
-	border: 2px solid #d0a9e0;
-	border-radius: 8px;
-	
+  width: 100px;
+  height: 120px;
+  margin: 0 auto;
+  border: 2px solid #d0a9e0;
+  border-radius: 8px;
 }
 .active {
-	opacity: 1;
-	transition: 0.4s;
+  opacity: 1;
+  transition: 0.4s;
 }
 
 .game-stats {
-	position: absolute;
-	left: 5%;
-	bottom: 5%;
-	display: flex;
-	flex-direction: column;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
 }
 .moves {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .score {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .startGame {
-	position: absolute;
-	left: 50%;
-	bottom: 10%;
-	background-color: #05091d;
-	padding: 5px 15px;
-	font-size: 22px;
-	border: none;
-	border-radius: 8px;
-	color: #fb951a;
-	cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  background-color: #05091d;
+  padding: 5px 15px;
+  font-size: 22px;
+  border: none;
+  border-radius: 8px;
+  color: #fb951a;
+  cursor: pointer;
 }
 
-
+.card-general {
+  background-position: center;
+  background-size: cover;
+}
 
 .babaJaga {
-	background-image: url('./img/cards/babajaga.png');
-	background-position: center;
-	background-size: cover;
+  background-image: url('./img/cards/babajaga.png');
 }
 
 .pumpkin {
-	background-image: url('./img/cards/dynia.png');
-	background-position: center;
-	background-size: cover;
-}
-.house {
-	background-image: url('./img/cards/domek.png');
-	background-position: center;
-	background-size: cover;
-}
-.scareCrow {
-	background-image: url('./img/cards/strach.png');
-	background-position: center;
-	background-size: cover;
-}
-.ghost {
-	background-image: url('./img/cards/duszek.jpg');
-	background-position: center;
-	background-size: cover;
-}
-.happyHaloween {
-	background-image: url('./img/cards/1934428.png');
-	background-position: center;
-	background-size: cover;
-	/* background-color: #d0a9e0; */
-}
-.shoes{
-	background-image: url('./img/cards/but.png');
-	background-position: center;
-	background-size: cover;
-}
-.web {
-	background-image: url('./img/cards/siatka.png');
-	background-position: center;
-	background-size: cover;
-}
-.bat {
-	background-image: url('./img/cards/nietoperz.png');
-	background-position: center;
-	background-size: cover;
-	
+  background-image: url('./img/cards/dynia.png');
 }
 
-.hidden{
-	background-image: url('/game_start/img/Gogivo_5663_preview.jpg');
-	
+.house {
+  background-image: url('./img/cards/domek.png');
+}
+
+.scareCrow {
+  background-image: url('./img/cards/strach.png');
+}
+
+.ghost {
+  background-image: url('./img/cards/duszek.jpg');
+}
+
+.happyHaloween {
+  background-image: url('./img/cards/1934428.png');
+}
+
+.shoes {
+  background-image: url('./img/cards/but.png');
+}
+
+.web {
+  background-image: url('./img/cards/siatka.png');
+}
+
+.bat {
+  background-image: url('./img/cards/nietoperz.png');
+}
+
+.hidden {
+  background-image: url('/game_start/img/Gogivo_5663_preview.jpg');
 }
